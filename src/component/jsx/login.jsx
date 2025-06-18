@@ -3,7 +3,6 @@ import img from "../hepler/images.jpeg";
 import { Button } from "./Button";
 import { Input } from "./link";
 
-
 export const Login = ({ onClick }) => {
   return (
     <div className={styles.maincontainer}>
@@ -18,10 +17,10 @@ export const Login = ({ onClick }) => {
         <Input placeholder="Enter your mobile No." />
       </div>
       <div className={styles.buttoncontainer}>
-        <Button text="Login" />
-        <Button text="Register" />
-       
-        
+         <Button text="Login already" onClick={() => onClick("Loginsecond")} />
+        <Button text="Register" onClick={() => onClick("register")} />
+          
+
       </div>
     </div>
   );
